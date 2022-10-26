@@ -1,0 +1,1 @@
+#### 运行voc_annotation.py文件后生成的数据集测试机划分文件（.txt）
