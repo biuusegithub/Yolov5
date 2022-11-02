@@ -8,13 +8,13 @@ def get_parser():
     parser = argparse.ArgumentParser()
 
     # preditct
-    parser.add_argument("--predict", default=False, help="predict the picture")
+    parser.add_argument("--predict", type=bool, default=False, help="predict the picture")
     parser.add_argument("--img_path", type=str, default="img\street.jpg", help="input image path")
-    parser.add_argument("--crop", default=False, help="Is crop the picture")
-    parser.add_argument("--count", default=False, help="count")
+    parser.add_argument("--crop", type=bool, default=False, help="Is crop the picture")
+    parser.add_argument("--count", type=bool, default=False, help="count")
 
     # train
-    parser.add_argument("--train", default=False, help="train the model")
+    parser.add_argument("--train", type=bool, default=False, help="train the model")
     parser.add_argument("--classes_path", type=str, help="input classes path")
     parser.add_argument("--anchors_path", type=str, help="input anchors path")
     parser.add_argument("--model_path", type=str, help="input model path")
